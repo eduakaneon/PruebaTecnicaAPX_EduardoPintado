@@ -72,7 +72,7 @@ query.insert=wikj;INSERT INTO WIKJ.T_WIKJ_HAB_PRUEBAFINAL (id, nuip, full_name, 
 query.select=wikj;SELECT HAB.id, HAB.nuip, HAB.full_name, HAB.phone, HAB.address FROM WIKJ.T_WIKJ_HAB_PRUEBAFINAL HAB WHERE HAB.id = :id;
 ```
 
-4. **Dtos Estas clases permiten pasar datos de una capa a otra sin exponer directamente los detalles de implementación de cada capa.
+4. **Dtos (`CustomerIn`, `CustomerOut`)**: Estas clases permiten pasar datos de una capa a otra sin exponer directamente los detalles de implementación de cada capa.
    ### Código
 ```java
 public class CustomerIn implements Serializable  {
