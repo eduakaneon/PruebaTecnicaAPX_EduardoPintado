@@ -64,7 +64,7 @@ public class WIKJT12301ESTransaction extends AbstractWIKJT12301ESTransaction {
 }
 
 ```
-3. **Consultas SQL (`query.insert`, `query.select`, `query.selectNuip`)**: Estas consultas SQL están definidas en un archivo de propiedades y se utilizan para realizar operaciones de base de datos como la inserción y selección de clientes.
+3. **Consultas SQL (`query.insert`, `query.select`)**: Estas consultas SQL están definidas en un archivo de propiedades y se utilizan para realizar operaciones de base de datos como la inserción y selección de clientes.
 ### Código
 
 ```java
@@ -97,9 +97,8 @@ public class CustomerOut implements Serializable  {
 
 La clase `WIKJR123Impl` proporciona métodos para insertar y seleccionar clientes en la base de datos. Los métodos incluyen:
 
-- `executeInsert`: Inserta un nuevo cliente en la base de datos.
+- `executeInsert`: Inserta un nuevo cliente en la base de datos, si el nuip ya existe este no insertara nada.
 - `executeSelect`: Busca un cliente por su ID en la base de datos.
-- `executeSelectNuip`: Verifica si un NUIP ya existe en la base de datos.
 
 ### Transacción
 
