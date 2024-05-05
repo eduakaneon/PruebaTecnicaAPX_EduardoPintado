@@ -2,7 +2,7 @@
 
 ### Descripción del Proyecto
 
-Este proyecto implementa un servicio para gestionar clientes en una base de datos. Proporciona métodos para insertar un nuevo cliente, buscar un cliente por su ID y verificar si un NUIP ya existe en la base de datos.
+Este proyecto implementa un servicio para gestionar clientes en una base de datos. Proporciona métodos para insertar un nuevo cliente si el nuip de este no existe, buscar un cliente por su ID.
 
 ### Estructura del Proyecto
 
